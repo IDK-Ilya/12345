@@ -11,12 +11,12 @@ fake_users = [
 ]
 
 @app.get("/")
-def one():
-    return "Какой-то бред"
+def one2():
+    return "Какой-то бред2"
 
 @app.get("/users/{user_id}")
 def get_user(user_id):
     return user_id
 
 if __name__=="__main__":
-    uvicorn.run("main:app", host="128.0.0.1", port=8000, reload=True)
+    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
